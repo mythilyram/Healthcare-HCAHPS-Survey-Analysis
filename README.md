@@ -53,11 +53,11 @@ I chose to focus solely on the NPS score. My goal was to determine if patient sa
   
 **Insights:**
 
-Efforts should be made to enhance the overall response rate as conducting analysis with a low response rate may lead to skewed results.
+Efforts should be made to enhance the overall response rate as analyzing with a low response rate may lead to skewed results.
 
 ## Heat map visual with tooltip
 
-I have created a heat map visual showing the distribution of NPS for each measure over the years with a tooltip to easily visualize this trend.
+The heat map visual shows the distribution of NPS for each measure over the years with a tooltip to easily visualize this trend.
 
 **Insights:**
 
@@ -73,7 +73,9 @@ The Line chart shows the trend of NPS over the years for each type of measure.
 
 **Insights:**
 
-- The Global items (Willingness to recommend the hospital and Overall hospital rating) have the highest NPS scores with 66.2% & 64.1% respectively.
+- The Global items
+  - Willingness to recommend the hospital and
+  - Overall hospital rating have the highest NPS scores with 66.2% & 64.1% respectively.
 - The Individual Items (Quitenes and Cleanliness of the hospital) have the lowest scores.
 - Among the Composite measures, Care Transition and communication about medication have lower NPS scores of 47.4%. Discharge info and communication with Doctors and nurses faired the top scores with scores higher than 70%
 
