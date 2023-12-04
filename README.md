@@ -82,7 +82,7 @@ The Line chart shows the trend of NPS over the years for each type of measure.
 - Among the Composite measures, the average scores of both of the below are 47%
   - Care Transition
   - Communication about medication
-- Discharge info and communication with Doctors and nurses faired the top scores with scores higher than 70%
+- Discharge info and communication with Doctors and nurses faired the top scores with scores higher than 75%
 
 ![3 1](https://github.com/mythilyram/Healthcare-HCAHPS-Survey-Analysis/assets/123518126/464fb4c7-3c3f-4fc7-b92c-e78009047a40)
 
@@ -124,34 +124,26 @@ While generating the heat map visual:
 - I wanted to create a visualization where the heatmap is separate for each row in the matrix.
 - I tried searching the net, YouTube, and ChatGPT. Could not find a possible solution. So I turned to LinkedIn to get help from my connections.
 - Here`s [my post](https://www.linkedin.com/posts/mythily-ramanathan_question-for-power-bi-enthusiasts-activity-7136472421443739648-fWlR?utm_source=share&utm_medium=member_desktop)
-- I was guided in the right direction, following which I could figure out.
-- I had to use DAX- the RankX function to generate a rank for each column based on the year.
-- 
+- I was guided in the right direction, following which I figured out that I had to use the RankX function DAX formula to generate a rank for each column (year) based on the measure.
+  
 ![image](https://github.com/mythilyram/Healthcare-HCAHPS-Survey-Analysis/assets/123518126/2079c755-56b1-42ec-b41c-359ed8722be1)
 
 - Use that rank in the conditional formatting to get my result.
-- 
+  
 ![Screenshot 2023-12-01 212826](https://github.com/mythilyram/Healthcare-HCAHPS-Survey-Analysis/assets/123518126/432f9572-e850-43e9-b29e-9576f58fdc01)
 
-### Conclusion
+## Conclusion
 
  The Maven Analytics healthcare challenge provided a rewarding journey into evaluating the quality of care in hospitals through the lens of HCAHPS survey data spanning nine years. The analysis illuminated crucial aspects, including overall improvements and areas that demand focused attention.
 
-**Key Takeaways**
+**Recommendations and Key Takeaways**
 
-- Areas of Excellence: Noteworthy progress was observed in Discharge Information, while positive responses in Communication with Doctors and Nurses were consistently maintained.
-Opportunities for Growth: Care Transition emerged as a focal point for improvement, emphasizing the need for strategic interventions to elevate patient experiences.
-Stability Amid Change: Despite fluctuations, the Quietness of Hospital Environment displayed resilience with the least percentage decrease, warranting a closer look.
-Regional Dynamics: South Dakota and Nebraska showcased the highest positive response rates, suggesting potential best practices worthy of exploration by other regions.
-
-## Recommendations:
-
+- **Areas of Excellence**: Noteworthy progress was observed in Discharge Information, while positive responses in Communication with Doctors and Nurses were consistently maintained.
+- **Opportunities for Growth**: Care Transition and Communication about medication emerged as the focal points for improvement, emphasizing the need for strategic interventions to elevate patient experiences.
+- **Stability Amid Change**: Despite fluctuations, the Quietness of the Hospital Environment displayed resilience with the least percentage decrease, warranting a closer look.
+- **Regional Dynamics**: South Dakota and Nebraska showcased the highest positive response rates, suggesting potential best practices worthy of exploration by other regions.
 - **Survey Awareness:** Hospitals should intensify efforts to raise awareness about completing surveys before patients' discharge, ensuring a comprehensive representation of experiences.
-- **Care transition Enhancement:** Hospitals can enhance the way they guide patients through their Care transition by focusing on three key elements:
-  - Encourage more active participation from patients and their caregivers in understanding healthcare needs before leaving the hospital.
-  - Make sure patients fully understand their responsibilities in managing their health.
-  - Ensure patients grasp the purpose of each prescribed medication.
-- **Growth opportunities**: Improving communication about medicines and enhancing the quietness of the hospital environment represent significant opportunities for growth in the coming years.
+
 
 This project serves as a testament to the power of data analytics in unraveling insights that can steer the healthcare industry toward continuous improvement. 
 
