@@ -43,7 +43,7 @@ The primary concept of the report is to showcase the trends and impacts of the H
 
 I chose to focus solely on the NPS score. My goal was to determine if patient satisfaction and loyalty increased or decreased over the past 9 years. 
 
-**Overview:**
+#### Overview:
 - Total hospital count - 5251
 - Total number of completed surveys - 43.2 K
 - Average Response rate - 26.6%
@@ -55,7 +55,7 @@ I chose to focus solely on the NPS score. My goal was to determine if patient sa
 
 Efforts should be made to enhance the overall response rate as analyzing with a low response rate may lead to skewed results.
 
-## Heat map visual with tooltip
+#### Heat map visual with tooltip
 
 The heat map visual shows the distribution of NPS for each measure over the years with a tooltip to easily visualize this trend.
 
@@ -67,7 +67,7 @@ The heat map visual shows the distribution of NPS for each measure over the year
 
 ![image](https://github.com/mythilyram/Healthcare-HCAHPS-Survey-Analysis/assets/123518126/ff4eddbc-96b6-430d-9421-6cb5e5bd70ea)
 
-## NPS trend 
+#### NPS trend 
 
 The Line chart shows the trend of NPS over the years for each type of measure.
 
@@ -86,7 +86,7 @@ The Line chart shows the trend of NPS over the years for each type of measure.
 
 ![3 1](https://github.com/mythilyram/Healthcare-HCAHPS-Survey-Analysis/assets/123518126/464fb4c7-3c3f-4fc7-b92c-e78009047a40)
 
-## Top Promoters/Detractors
+#### Top Promoters/Detractors
 
 - I have used **Bookmark** to study Promoters or Detractors using a **Shape map, top 5 States matrix, and Top Region matrix**. The other visual can be accessed by clicking the show button.
 - The color Saturation on the Shape map is indicated by the value of Promoters or Detractors
@@ -97,11 +97,11 @@ The Line chart shows the trend of NPS over the years for each type of measure.
 **Insights:**
 
 - Helps to study the data by state or by region.
-- Analyze the region/ state with high detractors and followup with corrective measures.
+- Analyze the region/ state with high detractors and follow up with corrective measures.
 
 ![4 5](https://github.com/mythilyram/Healthcare-HCAHPS-Survey-Analysis/assets/123518126/b3c74076-f66f-4a05-88af-cc90f9e31304)
 
- ## Top/Bottom States by response rate is represented by bar graphs
+ #### Top/Bottom States by response rate is represented by bar graphs
 
 **Insights:**
 
@@ -109,11 +109,11 @@ The Line chart shows the trend of NPS over the years for each type of measure.
 
 ![6](https://github.com/mythilyram/Healthcare-HCAHPS-Survey-Analysis/assets/123518126/dc675cea-5228-4074-860e-1abae8945662)
 
-## Final Dashboard
+### Final Dashboard
 
 ![1 final](https://github.com/mythilyram/Healthcare-HCAHPS-Survey-Analysis/assets/123518126/ab818a73-6f59-48f0-a6b1-6fb679ce1532)
 
-### Challenges
+### Challenges Faced
 
 While generating the heat map visual:
 
@@ -132,7 +132,7 @@ While generating the heat map visual:
   
 ![Screenshot 2023-12-01 212826](https://github.com/mythilyram/Healthcare-HCAHPS-Survey-Analysis/assets/123518126/432f9572-e850-43e9-b29e-9576f58fdc01)
 
-## Conclusion
+### Conclusion
 
  The Maven Analytics healthcare challenge provided a rewarding journey into evaluating the quality of care in hospitals through the lens of HCAHPS survey data spanning nine years. The analysis illuminated crucial aspects, including overall improvements and areas that demand focused attention.
 
