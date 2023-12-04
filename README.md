@@ -73,9 +73,9 @@ The Line chart shows the trend of NPS over the years for each type of measure.
 
 **Insights:**
 
-- The Global items
+- The Global items have the highest NPS scores with an average of 65%. The measures under this type are:
   - Willingness to recommend the hospital and
-  - Overall hospital rating have the highest NPS scores with 66.2% & 64.1% respectively.
+  - Overall hospital ratings
 - The Individual Items (Quitenes and Cleanliness of the hospital) have the lowest scores.
 - Among the Composite measures, Care Transition and communication about medication have lower NPS scores of 47.4%. Discharge info and communication with Doctors and nurses faired the top scores with scores higher than 70%
 
