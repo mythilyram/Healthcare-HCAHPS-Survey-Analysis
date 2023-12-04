@@ -24,9 +24,8 @@ To analyze the HCAHPS survey results for the past 9 years and evaluate whether i
   
 ### KPI - Net Promoter Score (NPS) 
 To analyze the healthcare survey dataset, I`m going to use a Key Metric called NPS.
-- It is a widely used metric to measure customer satisfaction and loyalty.
-- It is derived from responses to a simple survey question, On a scale of 0 to 10.
-- Based on their responses, respondents are categorized into three groups:
+- It is a widely used metric to measure customer satisfaction and loyalty. 
+- It is derived from responses to a simple survey question, On a scale of 0 to 10. - Based on their responses, respondents are categorized into three groups:
   - Promoters (score 9-10): These are enthusiastic customers who are likely to recommend your product or service.
   - Passives (score 7-8): These customers are satisfied but not enthusiastic. They are unlikely to actively promote your product but are also unlikely to speak negatively about it.
   - Detractors (score 0-6): These customers are unhappy and may actively discourage others from using your product or service.
@@ -41,9 +40,10 @@ The NPS is then calculated by subtracting the percentage of Detractors from the 
 ### Analysis
 
 The primary concept of the report is to showcase the trends and impacts of the HCAHPS survey over the years.
-I chose to focus solely NPS score. My goal was to determine if patient satisfaction and loyalty increased or decreased over the past 9 years. 
 
-**Overview: **
+I chose to focus solely on the NPS score. My goal was to determine if patient satisfaction and loyalty increased or decreased over the past 9 years. 
+
+**Overview:**
 - Total hospital count - 5251
 - Total number of completed surveys - 43.2 K
 - Average Response rate - 26.6%
@@ -51,6 +51,9 @@ I chose to focus solely NPS score. My goal was to determine if patient satisfact
 
 ![0](https://github.com/mythilyram/Healthcare-HCAHPS-Survey-Analysis/assets/123518126/630698e6-eef7-4539-94f4-ca153559430d)
   
+**Insights:**
+
+Efforts should be made to enhance the overall response rate as conducting analysis with a low response rate may lead to skewed results.
 
 ## Heat map visual with tooltip
 
@@ -87,6 +90,7 @@ The Line chart shows the trend of NPS over the years for each type of measure.
 **Insights:**
 
 - Helps to study the data by state or by region.
+- Analyze the region/ state with high detractors and followup with corrective measures.
 
 ![4 5](https://github.com/mythilyram/Healthcare-HCAHPS-Survey-Analysis/assets/123518126/b3c74076-f66f-4a05-88af-cc90f9e31304)
 
@@ -106,14 +110,20 @@ The Line chart shows the trend of NPS over the years for each type of measure.
 
 While generating the heat map visual:
 
-- I tried conditional formatting to get the heat map. But it applied to the whole matrix which was not what I was looking for.
+- I tried conditional formatting. But it applied formatting to the whole matrix which was not what I was looking for.
+  
    ![Screenshot 2023-12-01 163106](https://github.com/mythilyram/Healthcare-HCAHPS-Survey-Analysis/assets/123518126/dc957ee0-fb57-457d-97fa-7d81887f5fd0)
+  
 - I wanted to create a visualization where the heatmap is separate for each row in the matrix.
-- I tried searching the net, YouTube, and ChatGPT. Could not find it. So I turned to LinkedIn to get help from my connections.
+- I tried searching the net, YouTube, and ChatGPT. Could not find a possible solution. So I turned to LinkedIn to get help from my connections.
 - Here`s [my post](https://www.linkedin.com/posts/mythily-ramanathan_question-for-power-bi-enthusiasts-activity-7136472421443739648-fWlR?utm_source=share&utm_medium=member_desktop)
-- I was guided in the right direction, following which I could figure it out. I had to use DAX- the RankX function to generate a rank for each column based on the year.
+- I was guided in the right direction, following which I could figure out.
+- I had to use DAX- the RankX function to generate a rank for each column based on the year.
+- 
 ![image](https://github.com/mythilyram/Healthcare-HCAHPS-Survey-Analysis/assets/123518126/2079c755-56b1-42ec-b41c-359ed8722be1)
+
 - Use that rank in the conditional formatting to get my result.
+- 
 ![Screenshot 2023-12-01 212826](https://github.com/mythilyram/Healthcare-HCAHPS-Survey-Analysis/assets/123518126/432f9572-e850-43e9-b29e-9576f58fdc01)
 
 ### Conclusion
