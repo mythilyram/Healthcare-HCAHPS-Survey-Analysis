@@ -126,9 +126,10 @@ While generating the heat map visual:
 - Here`s [my post](https://www.linkedin.com/posts/mythily-ramanathan_question-for-power-bi-enthusiasts-activity-7136472421443739648-fWlR?utm_source=share&utm_medium=member_desktop)
 - I was guided in the right direction, following which I figured out that I had to use the RankX function DAX formula to generate a rank for each column (year) based on the measure.
   
-![image](https://github.com/mythilyram/Healthcare-HCAHPS-Survey-Analysis/assets/123518126/2079c755-56b1-42ec-b41c-359ed8722be1)
+![image](https://github.com/mythilyram/Healthcare-HCAHPS-Survey-Analysis/assets/123518126/c1397dd4-0527-4a06-8799-55584331b2ea)
 
-- Use that rank in the conditional formatting to get my result.
+
+- Used this rank in the conditional formatting to get my result.
   
 ![Screenshot 2023-12-01 212826](https://github.com/mythilyram/Healthcare-HCAHPS-Survey-Analysis/assets/123518126/432f9572-e850-43e9-b29e-9576f58fdc01)
 
