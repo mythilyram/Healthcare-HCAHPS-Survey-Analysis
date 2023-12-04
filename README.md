@@ -1,5 +1,4 @@
-# Healthcare-HCAHPS-Survey-Analysis
-HCAHPS Patient Survey Analysis - American Hospital Association
+# Healthcare-HCAHPS-Survey-Analysis - American Hospital Association
 
 ### Introduction
 
@@ -7,14 +6,14 @@ The Hospital Consumer Assessment of Healthcare Providers and Systems **(HCAHPS) 
 - It was developed by the Centres for Medicare & Medicaid Services (CMS) in collaboration with the Agency for Healthcare Research & Quality (AHRQ).
 - **The primary goal of the HCAHPS survey is to collect feedback from patients about their care experiences, to improve the quality of healthcare services provided by hospitals**.
 
-The report was made for Maven Analytics’ Healthcare challenge.
+This report was made for Maven Analytics’ Healthcare challenge.
 
 ### Role 
 Participants were tasked to play the role of a Data Analyst for the American Hospital Association (AHA), a national organization that represents hospitals and their patients and acts as a source of information on healthcare issues and trends.
 
 ### Objective
 
-To analyze the Hospital Consumer Assessment of Healthcare Providers and Systems (HCAHPS) survey results for the past 9 years and evaluate whether it has been successful in creating incentives for hospitals to improve their quality of care.
+To analyze the HCAHPS survey results for the past 9 years and evaluate whether it has been successful in creating incentives for hospitals to improve their quality of care.
 
 ### About The Data Set
 - All of the data used in this challenge were provided by Maven Analytics.
@@ -50,9 +49,15 @@ I chose to focus solely NPS score. My goal was to determine if patient satisfact
 - Average Response rate - 26.6%
 - NPS 62.9%
 
+![0](https://github.com/mythilyram/Healthcare-HCAHPS-Survey-Analysis/assets/123518126/630698e6-eef7-4539-94f4-ca153559430d)
+  
+
 ## Heat map visual with tooltip
 
-- I have created a heat map visual showing the distribution of NPS for each measure over the years with a tooltip to easily visualize this trend.
+I have created a heat map visual showing the distribution of NPS for each measure over the years with a tooltip to easily visualize this trend.
+
+**Insights:**
+
 - It is evident from the heat map that the NPS score of most of our measures has seen an increasing trend from 2014 to 2020.
 - We can see a clear change in shift by the year 2020 which could be attributed to COVID-19 and hence a shift in patients' sentiments.
 - But the measures - "Quietness of the hospital" and "Communication with the Doctors" show a continued decrease. This could be something to research further.
@@ -61,34 +66,81 @@ I chose to focus solely NPS score. My goal was to determine if patient satisfact
 
 ## NPS trend 
 
-- The Line chart shows the trend of NPS over the years for each type of measure.
+The Line chart shows the trend of NPS over the years for each type of measure.
+
+**Insights:**
+
 - The Global items (Willingness to recommend the hospital and Overall hospital rating) have the highest NPS scores with 66.2% & 64.1% respectively.
 - The Individual Items (Quitenes and Cleanliness of the hospital) have the lowest scores.
 - Among the Composite measures, Care Transition and communication about medication have lower NPS scores of 47.4%. Discharge info and communication with Doctors and nurses faired the top scores with scores higher than 70%
 
-![image](https://github.com/mythilyram/Healthcare-HCAHPS-Survey-Analysis/assets/123518126/5afce074-1f13-48db-aeae-18f877d2ed20)
-
+![3 1](https://github.com/mythilyram/Healthcare-HCAHPS-Survey-Analysis/assets/123518126/464fb4c7-3c3f-4fc7-b92c-e78009047a40)
 
 ## Top Promoters/Detractors
 
-- I have used **Bookmark** to study Promoters or Detractors using a **Shape map, top 5 States matrix and Top Region matrix**. The other visual can be accessed by the show button.
-- The color Saturation on the Shape map indicated by the value of Promoters or Detractors
+- I have used **Bookmark** to study Promoters or Detractors using a **Shape map, top 5 States matrix, and Top Region matrix**. The other visual can be accessed by clicking the show button.
+- The color Saturation on the Shape map is indicated by the value of Promoters or Detractors
 
 ![5](https://github.com/mythilyram/Healthcare-HCAHPS-Survey-Analysis/assets/123518126/92924788-8f91-4327-955b-8a5552fdb97c)
 ![4](https://github.com/mythilyram/Healthcare-HCAHPS-Survey-Analysis/assets/123518126/9cfe0c80-6ce3-41ef-adfc-fd5f56e33a25)
+
+**Insights:**
 
 - Helps to study the data by state or by region.
 
 ![4 5](https://github.com/mythilyram/Healthcare-HCAHPS-Survey-Analysis/assets/123518126/b3c74076-f66f-4a05-88af-cc90f9e31304)
 
-
  ## Top/Bottom States by response rate is represented by bar graphs
 
-![6](https://github.com/mythilyram/Healthcare-HCAHPS-Survey-Analysis/assets/123518126/da901b82-7ee5-4c35-8049-06b5b752a460)
+**Insights:**
+
+- The survey data on the whole has a low response rate with Nebraska (36.3%) being the top state by response rate.
+
+![6](https://github.com/mythilyram/Healthcare-HCAHPS-Survey-Analysis/assets/123518126/dc675cea-5228-4074-860e-1abae8945662)
 
 ## Final Dashboard
 
-![image](https://github.com/mythilyram/Healthcare-HCAHPS-Survey-Analysis/assets/123518126/e9326818-06ca-40b0-8abb-f73b3c825138)
+![1 final](https://github.com/mythilyram/Healthcare-HCAHPS-Survey-Analysis/assets/123518126/ab818a73-6f59-48f0-a6b1-6fb679ce1532)
+
+### Challenges
+
+While generating the heat map visual:
+
+- I tried conditional formatting to get the heat map. But it applied to the whole matrix which was not what I was looking for.
+   ![Screenshot 2023-12-01 163106](https://github.com/mythilyram/Healthcare-HCAHPS-Survey-Analysis/assets/123518126/dc957ee0-fb57-457d-97fa-7d81887f5fd0)
+- I wanted to create a visualization where the heatmap is separate for each row in the matrix.
+- I tried searching the net, YouTube, and ChatGPT. Could not find it. So I turned to LinkedIn to get help from my connections.
+- Here`s [my post](https://www.linkedin.com/posts/mythily-ramanathan_question-for-power-bi-enthusiasts-activity-7136472421443739648-fWlR?utm_source=share&utm_medium=member_desktop)
+- I was guided in the right direction, following which I could figure it out. I had to use DAX- the RankX function to generate a rank for each column based on the year.
+![image](https://github.com/mythilyram/Healthcare-HCAHPS-Survey-Analysis/assets/123518126/2079c755-56b1-42ec-b41c-359ed8722be1)
+- Use that rank in the conditional formatting to get my result.
+![Screenshot 2023-12-01 212826](https://github.com/mythilyram/Healthcare-HCAHPS-Survey-Analysis/assets/123518126/432f9572-e850-43e9-b29e-9576f58fdc01)
+
+### Conclusion
+
+ The Maven Analytics healthcare challenge provided a rewarding journey into evaluating the quality of care in hospitals through the lens of HCAHPS survey data spanning nine years. The analysis illuminated crucial aspects, including overall improvements and areas that demand focused attention.
+
+**Key Takeaways**
+
+- Areas of Excellence: Noteworthy progress was observed in Discharge Information, while positive responses in Communication with Doctors and Nurses were consistently maintained.
+Opportunities for Growth: Care Transition emerged as a focal point for improvement, emphasizing the need for strategic interventions to elevate patient experiences.
+Stability Amid Change: Despite fluctuations, the Quietness of Hospital Environment displayed resilience with the least percentage decrease, warranting a closer look.
+Regional Dynamics: South Dakota and Nebraska showcased the highest positive response rates, suggesting potential best practices worthy of exploration by other regions.
+
+## Recommendations:
+
+- **Survey Awareness:** Hospitals should intensify efforts to raise awareness about completing surveys before patients' discharge, ensuring a comprehensive representation of experiences.
+- **Care transition Enhancement:** Hospitals can enhance the way they guide patients through their Care transition by focusing on three key elements:
+  - Encourage more active participation from patients and their caregivers in understanding healthcare needs before leaving the hospital.
+  - Make sure patients fully understand their responsibilities in managing their health.
+  - Ensure patients grasp the purpose of each prescribed medication.
+- **Growth opportunities**: Improving communication about medicines and enhancing the quietness of the hospital environment represent significant opportunities for growth in the coming years.
+
+This project serves as a testament to the power of data analytics in unraveling insights that can steer the healthcare industry toward continuous improvement. 
+
+Your feedback on this journey is highly valued and welcomed! 
+
+
 
 
 
