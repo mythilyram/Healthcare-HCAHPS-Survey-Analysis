@@ -76,8 +76,13 @@ The Line chart shows the trend of NPS over the years for each type of measure.
 - The Global items have the highest NPS scores with an average of 65%. The measures under this type are:
   - Willingness to recommend the hospital and
   - Overall hospital ratings
-- The Individual Items (Quitenes and Cleanliness of the hospital) have the lowest scores.
-- Among the Composite measures, Care Transition and communication about medication have lower NPS scores of 47.4%. Discharge info and communication with Doctors and nurses faired the top scores with scores higher than 70%
+- The Individual Items have the lowest scores.
+  - Quitenes of hospital environment with an average of 52% and
+  - Cleanliness of the hospital environment with an average of 66%
+- Among the Composite measures, the average scores of both of the below are 47%
+  - Care Transition
+  - Communication about medication
+- Discharge info and communication with Doctors and nurses faired the top scores with scores higher than 70%
 
 ![3 1](https://github.com/mythilyram/Healthcare-HCAHPS-Survey-Analysis/assets/123518126/464fb4c7-3c3f-4fc7-b92c-e78009047a40)
 
